@@ -1,0 +1,33 @@
+select * from Student_mid_term_data
+--- how to perform a min aggregation operation on Midterm ?
+select min(Midterm) as final  from Student_mid_term_data
+
+select * from Student_mid_term_data
+--- how to perform a max aggregation operation on Midterm ?
+select max(Midterm) as final from Student_mid_term_data
+
+select * from Student_mid_term_data
+--- how to perform a count aggregation operation on Midterm ?
+select count(*) as final from Student_mid_term_data
+
+select * from Student_mid_term_data
+--- how to perform a group by aggregation operation on Midterm ?
+select Student,sum(Midterm) as final from Student_mid_term_data
+group by student
+
+select * from Student_mid_term_data
+--- how to perform a order by aggregation operation on Midterm ?
+select Midterm,final from Student_mid_term_data 
+order by Midterm asc
+
+select * from Student_mid_term_data
+--- how to perform sum aggregation operation on Midterm ?
+select sum(Midterm) as final from Student_mid_term_data
+
+
+
+
+
+
+
+
